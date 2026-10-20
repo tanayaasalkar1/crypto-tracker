@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-container">
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search by name or symbol">
+            </div>
+            <div class="sort-btns">
+                <button id="sort-cap" class="buttons">Sort by mkt cap</button>
+                <button id="sort-per" class="buttons">Sort by percentage</button>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table id="crypto-table">
+        
+                <tbody id="crypto-data">
+                    <!-- JavaScript will insert rows here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

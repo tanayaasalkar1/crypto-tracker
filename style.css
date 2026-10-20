@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191919;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+/* Search and sorting section */
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 0;
+}
+
+#search {
+    flex: 1;
+    height: 40px;
+    padding: 0 15px;
+    background-color: #191919;
+    border: 1px solid #777;
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+#search::placeholder {
+    color: white;
+}
+
+#search:focus {
+    border-color: white;
+}
+
+.buttons {
+    height: 40px;
+    padding: 0 18px;
+    background-color: #191919;
+    border: 1px solid #777;
+    color: white;
+    font-size: 13px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: #333;
+}
+
+/* Cryptocurrency table */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#crypto-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#crypto-table tr {
+    border-bottom: 1px solid #888;
+}
+
+#crypto-table td {
+    height: 66px;
+    padding: 12px 8px;
+    text-align: center;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* Coin name and image */
+
+.coin-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+}
+
+.coin-name img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.coin-name span {
+    font-size: 14px;
+}
+
+/* Percentage change */
+
+.positive {
+    color: #16c784;
+}
+
+.negative {
+    color: #ea3943;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+    }
+
+    #search {
+        flex-basis: 100%;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    #crypto-table {
+        min-width: 850px;
+    }
+}
